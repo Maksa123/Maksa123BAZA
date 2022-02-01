@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Result in ejs templating system:
+    <table>
+        <tr>
+            <td> CODE</td>
+            <td>Ime</td>
+            <td>Opstina</td>
+        </tr>
+  
+
+         <% for(var i=0; i<REZULTAT.length; i++) {%>
+            <tr>
+                <td>
+                    <%= REZULTAT[i].Code%>
+                </td>
+                <td>
+                    <a href=""><%= REZULTAT[i].Name %> </a>
+                </td>
+                <td>
+                    <%= REZULTAT[i].Continent%>
+                </td>
+            </tr>
+            <% } %> 
+
+    </table>
+</body>
+
+</html>
